@@ -23,3 +23,7 @@ variable "azs" {
  description = "Availability Zones"
  default     = ["ap-southeast-3a", "ap-southeast-3b", "ap-southeast-3c"]
 }
+
+variable "nama_vpc" {
+  default = "Main VPC"
+}
