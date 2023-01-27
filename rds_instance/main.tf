@@ -5,6 +5,7 @@ provider "aws" {
 
 
 resource "aws_db_instance" "main_instance" {
+  identifier             = var.identifier
   allocated_storage      = var.allocated_storage
   storage_type           = var.storage_type
   engine                 = var.engine

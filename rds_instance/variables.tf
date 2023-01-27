@@ -1,3 +1,8 @@
+variable "identifier" {
+  type = string
+  default = "mysql1"
+}
+
 variable "db_name" {
   type = string
   default = "instance1"
