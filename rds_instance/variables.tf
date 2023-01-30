@@ -43,10 +43,16 @@ variable "password" {
   default = "password"
 }
 
-variable "vpc_security_group_ids" {
-    type = list(string)
-    default = [ "sg-0c6991ff990f64300" ]
+variable "security_group_id" {}
+
+data "aws_security_group" "selected" {
+  id = var.security_group_id
+
+    tags = {
+    Name = "ecs-sg"
+  }
 }
+
 
 variable "publicly_accessible" {
   type    = bool
