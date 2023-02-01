@@ -12,7 +12,7 @@ data "aws_security_group" "selected" {
 data "aws_subnet" "selected" {
   filter {
     name   = "tag:Name"
-    values = ["Subnet1"]
+    values = ["Private Subnet 1"]
   }
  
 }
