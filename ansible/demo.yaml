@@ -4,5 +4,5 @@
     tasks:
       - name: ensure apache is running
         service:
-          name: httpd
+          name: ssh
           state: started
